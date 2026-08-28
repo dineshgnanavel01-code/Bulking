@@ -26,22 +26,10 @@ export default function Nutrition() {
 
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {nutritionTips.map((tip) => (
-            <div 
-              key={tip.title} 
-              className="flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-300 hover:border-lime-400/40 hover:shadow-xl hover:shadow-lime-400/5">
-              <div className="h-52 w-full overflow-hidden relative">
-                <img 
-                  src={tipImages[tip.title] || "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=600&auto=format&fit=crop"}
-                  alt={tip.title}
-                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                  loading="lazy"/>
-              </div>
-
-              <div className="flex flex-1 flex-col p-6 lg:p-8">
-                <span className="text-2xl font-black text-lime-400 sm:text-3xl">{tip.stat}</span>
-                <h3 className="mt-3 text-xl font-bold text-white">{tip.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-zinc-400">{tip.desc}</p>
-              </div>
+            <div key={tip.title} className="rounded-3xl border border-white/10 bg-white/5 p-8">
+              <span className="text-3xl font-black text-[#d7ff35]">{tip.stat}</span>
+              <h3 className="mt-4 text-xl font-bold text-white">{tip.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-zinc-400">{tip.desc}</p>
             </div>
           ))}
         </div>
