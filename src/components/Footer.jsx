@@ -73,7 +73,7 @@ function Footer() {
 
           <div>
             <h3 className="text-xs font-black uppercase tracking-widest text-white">
-              Programs
+              Plans
             </h3>
 
             <div className="mt-5 flex flex-col gap-3">
