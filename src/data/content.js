@@ -1,5 +1,9 @@
 export const navLinks = [
+<<<<<<< HEAD
   { name: "Plans", href: "#Plans" },
+=======
+  { name: "Plans", href: "#programs" },
+>>>>>>> f5bb4e4af087a9caeb5f2a797ebbd861ee9ea60e
   { name: "Schedule", href: "#schedule" },
   { name: "Nutrition", href: "#nutrition" },
   { name: "Benefits", href: "#benefits" },
