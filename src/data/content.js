@@ -64,8 +64,8 @@ export const nutritionTips = [
   {
     title: "Carb Refueling",
     stat: "45-55% Daily Energy",
-<<<<<<< HEAD
-    desc: "Carbohydrates fuel heavy lifting sessions and restock muscle glycogen stores to optimize performance.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop",
+    desc: "Carbohydrates fuel heavy lifting sessions and restock glycogen stores to optimize performance.",
   },
   {
     title: "Hydration & Electrolytes",
@@ -81,10 +81,6 @@ export const nutritionTips = [
     title: "Recovery Supplements",
     stat: "5g Creatine / Day",
     desc: "Incorporate evidence-based supplements like Creatine Monohydrate and Whey Protein to support explosive power output.",
-=======
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop",
-    desc: "Carbohydrates fuel heavy lifting sessions and restock glycogen stores to optimize muscle performance.",
->>>>>>> 237c5f39f666826fe5c92269413e4e7d2902f87a
   },
 ];
 
