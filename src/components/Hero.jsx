@@ -23,7 +23,7 @@ export default function Hero({ onStartClick }) {
 
       <div className="absolute inset-0 bg-zinc-950/80" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 text-center lg:px-10">
+      <div className="relative z-10 mx-auto max-w-full px-6 py-24 text-center lg:px-10">
         
         <div className="inline-flex items-center gap-3 rounded-full border border-amber-400/50 bg-stone-800/80 px-6 py-2.5 text-xs font-bold uppercase tracking-wider text-amber-300 backdrop-blur-md shadow-lg shadow-black/40">
           <span className="h-2.5 w-2.5 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.8)]" />

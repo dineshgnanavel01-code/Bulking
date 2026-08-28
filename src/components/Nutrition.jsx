@@ -13,7 +13,7 @@ const tipImages = {
 export default function Nutrition() {
   return (
     <section id="nutrition" className="py-20 border-t border-white/5 bg-zinc-900 scroll-mt-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="mx-auto max-w-full px-6 lg:px-10">
         
         <div className="text-center">
           <h2 className="text-3xl font-black uppercase text-white sm:text-4xl">
