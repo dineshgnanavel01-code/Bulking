@@ -87,3 +87,112 @@ a:focus-visible {
   outline: 2px solid var(--lime);
   outline-offset: 4px;
 }
+
+/* Motion system */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+main > section {
+  animation: fade-up 700ms var(--ease-out) both;
+}
+
+main > section:nth-child(2) { animation-delay: 80ms; }
+main > section:nth-child(3) { animation-delay: 140ms; }
+main > section:nth-child(4) { animation-delay: 200ms; }
+main > section:nth-child(5) { animation-delay: 260ms; }
+main > section:nth-child(6) { animation-delay: 320ms; }
+main > section:nth-child(7) { animation-delay: 380ms; }
+
+button:not(:disabled),
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:not(:disabled) {
+  will-change: transform;
+  transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out), background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+button:not(:disabled):active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: none;
+}
+
+button:not(:disabled):hover svg,
+a:hover svg {
+  transform: translateX(2px) scale(1.06);
+}
+
+svg {
+  transform-origin: center;
+  transition: transform 220ms var(--ease-out), color 220ms ease;
+}
+
+header a:first-child > div {
+  transition: transform 300ms var(--ease-out), box-shadow 300ms var(--ease-out);
+}
+
+header a:first-child:hover > div {
+  transform: rotate(-6deg) scale(1.08);
+  box-shadow: 0 0 0 6px rgba(215, 255, 53, 0.1), 0 10px 26px rgba(215, 255, 53, 0.18);
+}
+
+img {
+  will-change: transform;
+  transition: transform 700ms var(--ease-out), filter 700ms var(--ease-out);
+}
+
+img:hover {
+  transform: scale(1.035);
+  filter: saturate(1.08) contrast(1.03);
+}
+
+main > section > div > div > div,
+main article {
+  transition: transform 300ms var(--ease-out), border-color 300ms ease, box-shadow 300ms ease;
+}
+
+main > section > div > div > div:hover,
+main article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+}
+
+.fixed.inset-0 > div {
+  animation: modal-in 320ms var(--ease-out) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
