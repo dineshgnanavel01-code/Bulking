@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { navLinks } from "../data/content";
 
 export default function Navbar() {

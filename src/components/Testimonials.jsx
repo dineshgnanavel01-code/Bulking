@@ -1,4 +1,3 @@
-import React from 'react';
 import { testimonials as contentTestimonials } from "../data/content";
 
 const fallbackTestimonials = [

@@ -1,14 +1,5 @@
-import React from 'react';
 import { nutritionTips } from "../data/content";
 
-const tipImages = {
-  "Caloric Surplus": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=600&auto=format&fit=crop",
-  "Protein Intake": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=600&auto=format&fit=crop",
-  "Carb Refueling": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop",
-  "Hydration & Electrolytes": "https://images.unsplash.com/photo-1523362628745-0c100150b504?q=80&w=600&auto=format&fit=crop",
-  "Meal Timing": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=600&auto=format&fit=crop",
-  "Recovery Supplements": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?q=80&w=600&auto=format&fit=crop",
-};
 
 export default function Nutrition() {
   return (

@@ -5,7 +5,7 @@ export const navLinks = [
   { name: "Benefits", href: "#benefits" },
   { name: "Reviews", href: "#testimonials" },
   { name: "Get Started", href: "#cta" }, 
-]
+];
 
 export const workoutPlans = [
   {
