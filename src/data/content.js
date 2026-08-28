@@ -44,16 +44,19 @@ export const nutritionTips = [
   {
     title: "Caloric Surplus",
     stat: "+300-500 kcal",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=900&auto=format&fit=crop",
     desc: "Aim for a moderate daily surplus to ensure lean muscle growth while minimizing excess body fat storage.",
   },
   {
     title: "Protein Intake",
     stat: "1.6-2.2g / kg",
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop",
     desc: "Consume adequate high-quality protein evenly spaced across 4 to 5 meals daily to maximize protein synthesis.",
   },
   {
     title: "Carb Refueling",
     stat: "45-55% Daily Energy",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop",
     desc: "Carbohydrates fuel heavy lifting sessions and restock glycogen stores to optimize muscle performance.",
   },
 ];
