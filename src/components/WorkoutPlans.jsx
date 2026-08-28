@@ -3,7 +3,7 @@ import { workoutPlans } from "../data/content";
 export default function WorkoutPlans() {
   return (
     <section id="programs" className="py-20 border-t border-white/5 bg-[#111513]">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="mx-auto max-w-full px-6 lg:px-10">
         <div className="text-center">
           <h2 className="text-3xl font-black uppercase text-white sm:text-4xl">Training Programs</h2>
           <p className="mt-3 text-zinc-400">Choose your path to more size and progressive strength.</p>
@@ -13,8 +13,7 @@ export default function WorkoutPlans() {
           {workoutPlans.map((plan) => (
             <div
               key={plan.title}
-              className="flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-[#d7ff35]/50"
-            >
+              className="flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-[#d7ff35]/50">
               <div>
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold uppercase text-[#d7ff35]">{plan.level}</span>

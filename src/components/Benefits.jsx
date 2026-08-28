@@ -3,7 +3,7 @@ import { benefits } from "../data/content";
 export default function Benefits() {
   return (
     <section id="benefits" className="py-20 border-t border-white/5">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="mx-auto max-w-full px-6 lg:px-10">
         <div className="text-center">
           <h2 className="text-3xl font-black uppercase text-white sm:text-4xl">System Benefits</h2>
           <p className="mt-3 text-zinc-400">Designed around proven hypertrophy principles.</p>

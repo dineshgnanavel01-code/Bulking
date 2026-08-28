@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import WorkoutPlans from "./components/WorkoutPlans";
@@ -12,13 +13,17 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#080a09] font-sans text-zinc-100 selection:bg-[#d7ff35] selection:text-[#080a09]">
       <Navbar />
-      <Hero />
-      <WorkoutPlans />
-      <TrainingSchedule />
-      <Nutrition />
-      <Benefits />
-      <Testimonials />
-      <CallToAction />
+      
+      <main>
+        <Hero />
+        <WorkoutPlans />
+        <TrainingSchedule />
+        <Nutrition />
+        <Benefits />
+        <Testimonials />
+        <CallToAction />
+      </main>
+
       <Footer />
     </div>
   );
